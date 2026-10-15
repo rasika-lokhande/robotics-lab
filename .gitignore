@@ -6,6 +6,12 @@ __pycache__/
 .venv/
 venv/
 
+# C++ build output
+build/
+*.o
+*.out
+
+
 # Generated output
 outputs/*
 !outputs/.gitkeep

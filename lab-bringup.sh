@@ -6,11 +6,11 @@
 
 
 
-if [ -n "$(docker compose ps --status running -q robotics-lab)" ]; then
+if [ -n "$(docker compose ps --status running -q dev)" ]; then
     echo "Opening Interactive docker terminal.."
-    docker compose exec robotics-lab bash
+    docker compose exec dev bash
 else
     echo "Starting a new container.."
     docker compose up -d
-    docker compose exec robotics-lab bash
+    docker compose exec dev bash
 fi

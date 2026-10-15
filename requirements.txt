@@ -4,3 +4,4 @@ PyOpenGL
 numpy
 matplotlib
 pytest
+pytest-mock

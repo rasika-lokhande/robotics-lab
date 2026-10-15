@@ -1,8 +1,25 @@
 # robotics-lab
 
-Implementations of robotics concepts from first principles.
+Personal repository for implementations of robotics concepts from first principles for
+- learning theory underlying robotics
+- learning tools and tech stack for robotics development
+- best software development practices
+- experimentation and trying out any ideas related to robotics
 
-Uses Mujoco for simulation, where required
+Topics:
+- Theory
+    - Spatial math
+    - Kinematics
+    - Control
+    - Dynamics
+    - State Estimation
+    - Robot Learning
+- Software development
+    - Testing, Evaluations, Validations
+    - ROS2 best practices
+    - General C++ practice
+
+Uses MuJoCo for simulation, where required. May add other simulators in future.
 
 ## Setup
 
@@ -12,8 +29,9 @@ Uses Mujoco for simulation, where required
 - Docker
 - NVIDIA GPU
 - NVIDIA Container Toolkit
+- Claude Code installed and logged in on the host
 
-Optional 
+Optional
 - VS Code Dev Containers Extension
 
 ### Build and Start
@@ -29,11 +47,9 @@ bash lab-bringup.sh # Starts container and opens shell
 
 Note: The repository is mounted at `/workspace` in the container, so changes made on the host show up there immediately.
 
-
 #### Option 2: Use VS Code Dev Containers
 
-Open the repo in VS Code and run **Dev Containers: Reopen in Container**. 
-
+Open the repo in VS Code and run **Dev Containers: Reopen in Container**.
 
 ### Verify setup
 

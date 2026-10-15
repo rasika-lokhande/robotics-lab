@@ -2,7 +2,7 @@
 {
   "name": "Robotics Lab",
   "dockerComposeFile": "../compose.yml",
-  "service": "robotics-lab",
+  "service": "dev",
   "workspaceFolder": "/workspace",
   "shutdownAction": "stopCompose",
   "remoteEnv": {
@@ -13,8 +13,9 @@
       "extensions": [
         "ms-python.python",
         "ms-toolsai.jupyter",
-        "anthropic.claude-code"
-
+        "anthropic.claude-code",
+        "ms-vscode.cpptools",
+        "ms-vscode.cmake-tools"
       ]
     }
   }
