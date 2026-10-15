@@ -1,0 +1,6 @@
+
+mujoco
+PyOpenGL
+numpy
+matplotlib
+pytest
