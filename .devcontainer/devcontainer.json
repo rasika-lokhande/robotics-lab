@@ -5,6 +5,9 @@
   "service": "robotics-lab",
   "workspaceFolder": "/workspace",
   "shutdownAction": "stopCompose",
+  "remoteEnv": {
+    "SSH_AUTH_SOCK": "${localEnv:SSH_AUTH_SOCK}"
+  },
   "customizations": {
     "vscode": {
       "extensions": [
