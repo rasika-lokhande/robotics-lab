@@ -17,6 +17,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libglfw3 \
     libglew2.2 \
     mesa-utils \
+    libeigen3-dev \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /workspace

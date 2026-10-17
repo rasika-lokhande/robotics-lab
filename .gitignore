@@ -8,16 +8,45 @@ venv/
 
 # C++ build output
 build/
+bin/
 *.o
 *.out
 
+# Object files, libraries, executables
+*.obj
+*.a
+*.so
+*.so.*
+*.exe
+
+# Compiler-generated dependency and precompiled-header files
+*.d
+*.gch
+*.pch
+
+# CMake files from an accidental in-source build (cmake . instead of cmake ..)
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+
+# clangd cache
+.cache/
+
+# Core dumps from crashes
+core
+core.*
 
 # Generated output
 outputs/*
 !outputs/.gitkeep
 
 # Editors and OS
-.vscode/
+.vscode/*
+!.vscode/c_cpp_properties.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
 .idea/
 .DS_Store
 Thumbs.db

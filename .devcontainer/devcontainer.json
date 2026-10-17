@@ -8,14 +8,17 @@
   "remoteEnv": {
     "SSH_AUTH_SOCK": "${localEnv:SSH_AUTH_SOCK}"
   },
+  "initializeCommand": "xhost +local:docker",
   "customizations": {
     "vscode": {
       "extensions": [
         "ms-python.python",
         "ms-toolsai.jupyter",
         "anthropic.claude-code",
-        "ms-vscode.cpptools",
-        "ms-vscode.cmake-tools"
+        "ms-vscode.cmake-tools",
+        "ms-vscode.cpptools-extension-pack",
+        "formulahendry.code-runner"
+
       ]
     }
   }

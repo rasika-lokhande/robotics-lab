@@ -1,6 +1,8 @@
 # robotics-lab
 
-Personal repository for implementations of robotics concepts from first principles for
+Personal repository for robotics practise and exploration
+
+- Implementations of robotics concepts from first principles
 - learning theory underlying robotics
 - learning tools and tech stack for robotics development
 - best software development practices
@@ -18,6 +20,7 @@ Topics:
     - Testing, Evaluations, Validations
     - ROS2 best practices
     - General C++ practice
+    - Setting up environments (Docker, etc)
 
 Uses MuJoCo for simulation, where required. May add other simulators in future.
 

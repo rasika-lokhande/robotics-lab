@@ -1,12 +1,10 @@
-
 services:
   dev:
     build: .
     working_dir: /workspace
-   
+
     environment:
       DISPLAY: ${DISPLAY}
-      XAUTHORITY: /tmp/.container.xauth
       MUJOCO_GL: egl
       __NV_PRIME_RENDER_OFFLOAD: 1
       __GLX_VENDOR_LIBRARY_NAME: nvidia
@@ -16,7 +14,6 @@ services:
     volumes:
       - .:/workspace
       - /tmp/.X11-unix:/tmp/.X11-unix:rw
-      - ${XAUTHORITY}:/tmp/.container.xauth:ro
       - ${HOME}/.claude:/root/.claude
       - ${HOME}/.claude.json:/root/.claude.json
     deploy:

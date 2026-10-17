@@ -1,0 +1,19 @@
+{
+    "ROS2.distro": "jazzy",
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ],
+    "code-runner.runInTerminal": true,
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.executorMap": {
+        "python": "python3 -u",
+        "cpp": "cd $dir && mkdir -p $workspaceRoot/bin && g++ -std=c++17 -Wall $fileName -o $workspaceRoot/bin/$fileNameWithoutExt && $workspaceRoot/bin/$fileNameWithoutExt",
+        "c": "cd $dir && mkdir -p $workspaceRoot/bin && gcc -Wall $fileName -o $workspaceRoot/bin/$fileNameWithoutExt && $workspaceRoot/bin/$fileNameWithoutExt"
+    },
+    "cmake.sourceDirectory": "/workspace/swe/cpp/HelloWorld",
+
+}
